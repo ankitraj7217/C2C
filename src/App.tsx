@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Dashboard from './Components/Dashboard';
+import { RouterProvider } from "react-router-dom";
+import appRouter from './Routes';
 
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <RouterProvider router={appRouter} />
     </div>
   );
 }
